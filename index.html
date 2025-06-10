@@ -95,8 +95,11 @@
 
       const projects = [
         { id: 1, title: 'Disaster Relief Mobile App', description: 'Developed a mobile application for disaster relief using Flutter, incorporating image processing for damage assessment and aid coordination.', tech: 'Flutter' },
+
         { id: 2, title: 'ML-Based Text Processing', description: 'Built a machine learning model for text processing, enabling analysis and categorization of disaster-related communications.', tech: 'ML' },
-        { id: 3, title: 'Custom Voice Assistant', description: 'We built a Python-based custom voice assistant that understands voice commands and performs tasks like web searches and app control using speech recognition and text-to-speech.', tech: 'Python' }
+        { id: 3, title: 'Custom Voice Assistant', description: 'We built a Python-based custom voice assistant that understands voice commands and performs tasks like web searches and app control using speech recognition and text-to-speech.', tech: 'Python' },
+        { id: 4, title: 'Weather Snap', description: 'Developed a Flutter-based weather app with real-time data via OpenWeatherMap API, featuring city search, five-day forecasts, and hourly details. Enhanced UI with dynamic gradients and animations, added fallback icons, and resolved NDK build issues for APK deployment. Hosted on GitHub with README, screenshots, and demo video.', tech: 'Flutter' },
+        
       ];
 
       const filteredProjects = projectFilter === 'All' ? projects : projects.filter(project => project.tech === projectFilter);
@@ -157,9 +160,12 @@
               <p className="text-xl font-light max-w-3xl mx-auto">
                 Innovating at the intersection of AI and mobile technology to solve real-world challenges with Flutter, React-Native, and Machine Learning.
               </p>
-              <a href="Osama_Safdar_Resume.docx" download className="mt-6 inline-block px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-blue-100 transition" aria-label="Download resume">
-  		Download Resume
-		</a>
+              <a
+                href="Osama_Safdar_Resume.pdf"
+                download
+                className="mt-6 inline-block px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-blue-100 transition"
+                aria-label="Download resume"
+              >
                 Download Resume
               </a>
             </div>
